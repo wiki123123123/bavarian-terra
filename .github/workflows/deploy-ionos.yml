@@ -1,0 +1,30 @@
+name: Deploy to IONOS SFTP
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Deploy to IONOS via SFTP
+      uses: pressidium/lftp-mirror-action@v1
+      with:
+        host: access-5018828395.webspace-host.com
+        port: 22
+        user: su206119
+        pass: ${{ secrets.FTP_PASSWORD }}
+        remoteDir: '/public/test'
+        localDir: '.'
+        options: '--only-newer --parallel=10'
+        
+    - name: Deployment complete
+      run: |
+        echo "✅ Deployed to IONOS /public/test"
+        echo "🌐 Test your site before deploying to /public"
