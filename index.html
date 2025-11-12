@@ -3,39 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bavarian Terra - Wohnimmobilien München & Bayern</title>
+    <title>Münchner Lebensraum - Immobilieninvestments in München</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <svg width="45" height="45" viewBox="0 0 60 60" class="logo-icon">
-                    <defs>
-                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#0056a3;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#003366;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <path d="M15 45 L15 20 L25 10 L35 20 L35 45 Z" fill="url(#logoGradient)" opacity="0.9"/>
-                    <path d="M25 45 L25 15 L30 10 L45 20 L45 45 Z" fill="url(#logoGradient)"/>
-                    <rect x="20" y="5" width="20" height="3" fill="url(#logoGradient)" rx="1.5"/>
+                <svg class="logo-icon" width="50" height="50" viewBox="0 0 50 50">
+                    <rect x="10" y="15" width="12" height="25" fill="currentColor" opacity="0.8"/>
+                    <rect x="28" y="15" width="12" height="25" fill="currentColor" opacity="0.8"/>
+                    <path d="M 5 15 L 25 5 L 45 15" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <rect x="20" y="28" width="10" height="12" fill="currentColor"/>
                 </svg>
-                <span class="logo-text">Bavarian Terra</span>
+                <div class="logo-text">
+                    <span class="logo-main">MÜNCHNER LEBENSRAUM</span>
+                    <span class="logo-sub">Real Estate Partners</span>
+                </div>
             </a>
-            
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#ueber-uns" class="nav-link">Über Uns</a></li>
                 <li><a href="#ankaufsprofil" class="nav-link">Ankaufsprofil</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#leistungsversprechen" class="nav-link">Leistungen</a></li>
+                <li><a href="#leistungen" class="nav-link">Leistungen</a></li>
                 <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
             </ul>
         </div>
@@ -44,300 +40,262 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-background-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="hero-content fade-in">
+        <div class="hero-background"></div>
+        
+        <!-- Floating shapes for visual interest -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        
+        <div class="hero-content">
             <div class="hero-tag">München & Bayern</div>
-            <h1 class="hero-title">Verlässlicher Partner für Wohnimmobilien</h1>
-            <p class="hero-subtitle">Wir investieren in Mehrfamilienhäuser mit Entwicklungspotenzial und schaffen nachhaltigen Wert für alle Beteiligten.</p>
+            <h1 class="hero-title">
+                Wohnimmobilien<br>
+                mit <span class="highlight">Perspektive</span>
+            </h1>
+            <p class="hero-subtitle">
+                Strategische Investments in erstklassigen Münchner Wohnlagen
+            </p>
+            
             <div class="hero-stats">
-                <div class="stat-item">
+                <div class="stat">
                     <div class="stat-number">50+</div>
                     <div class="stat-label">Wohneinheiten</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat">
                     <div class="stat-number">10+</div>
                     <div class="stat-label">Jahre Erfahrung</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat">
                     <div class="stat-number">100%</div>
-                    <div class="stat-label">München & Bayern</div>
+                    <div class="stat-label">München Focus</div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            
+            <a href="#kontakt" class="cta-button">Jetzt Kontakt aufnehmen</a>
+            
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M10 15 L10 5 M10 15 L6 11 M10 15 L14 11" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
         </div>
     </section>
 
     <!-- Über Uns Section -->
-    <section id="ueber-uns" class="section">
+    <section id="ueber-uns" class="section section-dark">
         <div class="container">
             <div class="section-header fade-in-up">
-                <span class="section-tag">Über uns</span>
-                <h2>Erfahrung trifft Innovation</h2>
-                <p class="section-intro">Bavarian Terra verbindet langjährige Markterfahrung mit modernen Investmentstrategien</p>
+                <span class="section-tag">Über Uns</span>
+                <h2>Ihr Partner für Wohnimmobilien in München</h2>
             </div>
-            <div class="content-grid">
-                <div class="content-block fade-in-up delay-1">
-                    <h3>Unsere Expertise</h3>
-                    <p>Wir investieren seit Jahren erfolgreich in den Münchner und Bayerischen Wohnungsmarkt. Mit einem Portfolio von über 50 Wohneinheiten haben wir uns als verlässlicher und kapitalstarker Partner etabliert.</p>
+            
+            <div class="content-grid fade-in-up">
+                <div class="content-block">
+                    <h3>Unsere Mission</h3>
+                    <p>
+                        Münchner Lebensraum investiert gezielt in hochwertige Wohnimmobilien 
+                        in München und Bayern. Wir schaffen nachhaltigen Wert durch strategische 
+                        Ankäufe in erstklassigen Lagen und professionelles Management.
+                    </p>
                 </div>
-                <div class="content-block fade-in-up delay-2">
+                
+                <div class="content-block">
                     <h3>Unser Ansatz</h3>
-                    <p>Wir identifizieren Mehrfamilienhäuser mit ungenutztem Potenzial und entwickeln diese nachhaltig weiter. Dabei garantieren wir eine schnelle, unkomplizierte und sichere Abwicklung.</p>
-                </div>
-                <div class="content-block fade-in-up delay-3">
-                    <h3>Unsere Werte</h3>
-                    <p>Verlässlichkeit, Transparenz und langfristiges Denken prägen unsere Geschäftsbeziehungen. Wir schaffen Wert für alle Stakeholder – von Verkäufern bis zu Mietern.</p>
+                    <p>
+                        Mit über 50 Wohneinheiten im Portfolio konzentrieren wir uns auf 
+                        Bestandsimmobilien mit Wertsteigerungspotenzial. Unsere lokale Expertise 
+                        und unser Netzwerk garantieren fundierte Investitionsentscheidungen.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Ankaufsprofil Section -->
-    <section id="ankaufsprofil" class="section section-dark">
+    <section id="ankaufsprofil" class="section">
         <div class="container">
             <div class="section-header fade-in-up">
                 <span class="section-tag">Ankaufsprofil</span>
                 <h2>Was wir suchen</h2>
-                <p class="section-intro">Mehrfamilienhäuser in München mit Entwicklungspotenzial</p>
             </div>
             
-            <div class="profile-cards">
-                <div class="profile-card fade-in-up delay-1">
-                    <div class="profile-icon">📐</div>
-                    <h3>Größe</h3>
-                    <div class="profile-value">600 – 2.000 m²</div>
-                    <p>Wohnfläche</p>
+            <div class="profile-grid fade-in-up">
+                <div class="profile-card">
+                    <div class="profile-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <rect x="5" y="10" width="30" height="25" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <line x1="5" y1="18" x2="35" y2="18" stroke="currentColor" stroke-width="2"/>
+                            <line x1="5" y1="26" x2="35" y2="26" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Objektart</h3>
+                    <p>Mehrfamilienhäuser, Wohnungsportfolios</p>
                 </div>
-                <div class="profile-card fade-in-up delay-2">
-                    <div class="profile-icon">💰</div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M20 8 L20 20 L28 20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Objektgröße</h3>
+                    <p>600 - 2.000 m² Wohnfläche</p>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <path d="M10 30 L10 15 L20 5 L30 15 L30 30 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <rect x="15" y="20" width="10" height="10" fill="currentColor" opacity="0.3"/>
+                        </svg>
+                    </div>
                     <h3>Kaufpreis</h3>
-                    <div class="profile-value">2 – 10 Mio. €</div>
-                    <p>Investitionsvolumen</p>
+                    <p>2 - 10 Mio. EUR</p>
                 </div>
-                <div class="profile-card fade-in-up delay-3">
-                    <div class="profile-icon">📍</div>
-                    <h3>Lagen</h3>
-                    <div class="profile-value">Gute Wohnlagen</div>
-                    <p>Stabile Nachfrage, keine 1A-Lagen</p>
-                </div>
-            </div>
-
-            <div class="features-section fade-in-up delay-4">
-                <h3>Besonderheiten, die uns interessieren</h3>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-icon">📈</div>
-                        <div class="feature-content">
-                            <h4>Mietpotenzial</h4>
-                            <p>Unterdurchschnittliche Mieten mit Anpassungspotenzial</p>
-                        </div>
+                
+                <div class="profile-card">
+                    <div class="profile-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                            <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                            <line x1="20" y1="20" x2="20" y2="8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🔨</div>
-                        <div class="feature-content">
-                            <h4>Modernisierung</h4>
-                            <p>Sanierungs- oder Modernisierungsbedarf inkl. energetischer Maßnahmen</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🏗️</div>
-                        <div class="feature-content">
-                            <h4>Ausbaupotenzial</h4>
-                            <p>Dachgeschoss-Ausbau, Nachverdichtung oder Anbau</p>
-                        </div>
-                    </div>
+                    <h3>Lage</h3>
+                    <p>München & Umland (bis 30 km)</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section">
+    <section id="portfolio" class="section section-dark">
         <div class="container">
             <div class="section-header fade-in-up">
                 <span class="section-tag">Portfolio</span>
-                <h2>Unsere Projekte</h2>
-                <p class="section-intro">Ausgewählte Objekte in München und Bayern</p>
+                <h2>Unsere Investments</h2>
             </div>
             
-            <div class="portfolio-grid">
-                <div class="portfolio-item fade-in-up delay-1">
+            <div class="portfolio-grid fade-in-up">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
-                            <div class="building-icon">🏢</div>
-                        </div>
-                        <div class="portfolio-tag">München Schwabing</div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Mehrfamilienhaus</h4>
-                        <div class="portfolio-details">
-                            <span>12 Wohneinheiten</span>
-                            <span>•</span>
-                            <span>950 m²</span>
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop" alt="München Schwabing">
+                        <div class="portfolio-overlay">
+                            <h3>München Schwabing</h3>
+                            <p>12 Wohneinheiten • 2023</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="portfolio-item fade-in-up delay-2">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
-                            <div class="building-icon">🏢</div>
-                        </div>
-                        <div class="portfolio-tag">München Haidhausen</div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Wohnanlage</h4>
-                        <div class="portfolio-details">
-                            <span>8 Wohneinheiten</span>
-                            <span>•</span>
-                            <span>720 m²</span>
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop" alt="München Haidhausen">
+                        <div class="portfolio-overlay">
+                            <h3>München Haidhausen</h3>
+                            <p>8 Wohneinheiten • 2022</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="portfolio-item fade-in-up delay-3">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
-                            <div class="building-icon">🏢</div>
-                        </div>
-                        <div class="portfolio-tag">München Sendling</div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Altbau Ensemble</h4>
-                        <div class="portfolio-details">
-                            <span>16 Wohneinheiten</span>
-                            <span>•</span>
-                            <span>1.350 m²</span>
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&h=600&fit=crop" alt="München Sendling">
+                        <div class="portfolio-overlay">
+                            <h3>München Sendling</h3>
+                            <p>16 Wohneinheiten • 2024</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="portfolio-item fade-in-up delay-4">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
-                            <div class="building-icon">🏢</div>
-                        </div>
-                        <div class="portfolio-tag">München Neuhausen</div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>Stadthaus</h4>
-                        <div class="portfolio-details">
-                            <span>14 Wohneinheiten</span>
-                            <span>•</span>
-                            <span>1.100 m²</span>
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop" alt="München Neuhausen">
+                        <div class="portfolio-overlay">
+                            <h3>München Neuhausen</h3>
+                            <p>14 Wohneinheiten • 2023</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="portfolio-note fade-in-up delay-5">
-                <p>Weitere Objekte auf Anfrage. Wir behandeln alle Transaktionen vertraulich.</p>
             </div>
         </div>
     </section>
 
-    <!-- Leistungsversprechen Section -->
-    <section id="leistungsversprechen" class="section section-dark">
+    <!-- Leistungen Section -->
+    <section id="leistungen" class="section">
         <div class="container">
             <div class="section-header fade-in-up">
                 <span class="section-tag">Leistungen</span>
                 <h2>Unser Leistungsversprechen</h2>
-                <p class="section-intro">Was Sie von uns erwarten können</p>
             </div>
             
-            <div class="promise-grid">
-                <div class="promise-card fade-in-up delay-1">
+            <div class="promises-grid fade-in-up">
+                <div class="promise-card">
                     <div class="promise-number">01</div>
-                    <div class="promise-icon">⚡</div>
                     <h3>Schnelle Entscheidungen</h3>
-                    <p>Klare Rückmeldungen innerhalb von 48 Stunden nach Objektbesichtigung. Keine langwierigen Genehmigungsprozesse.</p>
+                    <p>
+                        Als Eigenkapitalinvestor treffen wir schnelle und unkomplizierte 
+                        Entscheidungen ohne langwierige Bankabstimmungen.
+                    </p>
                 </div>
                 
-                <div class="promise-card fade-in-up delay-2">
+                <div class="promise-card">
                     <div class="promise-number">02</div>
-                    <div class="promise-icon">🛡️</div>
-                    <h3>Transaktionssicherheit</h3>
-                    <p>Eigenkapitalstark mit gesicherter Finanzierung. Hohe Abschlussquote durch verlässliche Zusagen.</p>
+                    <h3>Diskrete Abwicklung</h3>
+                    <p>
+                        Vertraulichkeit und Diskretion sind für uns selbstverständlich. 
+                        Wir garantieren einen professionellen und vertrauensvollen Prozess.
+                    </p>
                 </div>
                 
-                <div class="promise-card fade-in-up delay-3">
+                <div class="promise-card">
                     <div class="promise-number">03</div>
-                    <div class="promise-icon">🤝</div>
-                    <h3>Langfristige Partnerschaft</h3>
-                    <p>Wiederkehrendes Geschäft durch kontinuierliche Ankäufe. Wir bauen auf dauerhafte Beziehungen.</p>
+                    <h3>Faire Konditionen</h3>
+                    <p>
+                        Transparente Kaufpreise auf Basis fundierter Bewertungen. 
+                        Wir agieren als langfristig orientierter Partner.
+                    </p>
                 </div>
                 
-                <div class="promise-card fade-in-up delay-4">
+                <div class="promise-card">
                     <div class="promise-number">04</div>
-                    <div class="promise-icon">📋</div>
-                    <h3>Unkomplizierte Abwicklung</h3>
-                    <p>Professionelle Begleitung von der Due Diligence bis zum Notartermin. Minimaler Aufwand für Verkäufer.</p>
+                    <h3>Lokale Expertise</h3>
+                    <p>
+                        Tiefes Verständnis des Münchner Immobilienmarktes durch 
+                        jahrelange Erfahrung und ein starkes lokales Netzwerk.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Kontakt Section -->
-    <section id="kontakt" class="section section-contact">
+    <section id="kontakt" class="section section-dark">
         <div class="container">
             <div class="section-header fade-in-up">
                 <span class="section-tag">Kontakt</span>
                 <h2>Sprechen Sie mit uns</h2>
-                <p class="section-intro">Wir freuen uns auf Ihre Anfrage</p>
             </div>
             
-            <div class="contact-wrapper">
-                <div class="contact-cards">
-                    <div class="contact-person-card fade-in-up delay-1">
-                        <div class="contact-avatar">SW</div>
-                        <h3>Sven Wittmaack</h3>
-                        <p class="contact-role">Geschäftsführer</p>
-                        <div class="contact-links">
-                            <a href="/cdn-cgi/l/email-protection#96e5b8e1ffe2e2fbf7f7f5fdd6f4f7e0f7e4fff7f8bbe2f3e4e4f7b8f2f3" class="contact-link">
-                                <span class="contact-icon">✉️</span>
-                                <span class="__cf_email__" data-cfemail="f88bd68f918c8c9599999b93b89a998e998a919996d58c9d8a8a99d69c9d">[email&#160;protected]</span>
-                            </a>
-                            <a href="tel:+491234567890" class="contact-link">
-                                <span class="contact-icon">📱</span>
-                                +49 123 456 7890
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-person-card fade-in-up delay-2">
-                        <div class="contact-avatar">PW</div>
-                        <h3>Peer Weder</h3>
-                        <p class="contact-role">Geschäftsführer</p>
-                        <div class="contact-links">
-                            <a href="/cdn-cgi/l/email-protection#2b5b055c4e4f4e596b494a5d4a59424a45065f4e59594a054f4e" class="contact-link">
-                                <span class="contact-icon">✉️</span>
-                                <span class="__cf_email__" data-cfemail="62124c15070607102200031403100b030c4f16071010034c0607">[email&#160;protected]</span>
-                            </a>
-                            <a href="tel:+491234567891" class="contact-link">
-                                <span class="contact-icon">📱</span>
-                                +49 123 456 7891
-                            </a>
-                        </div>
+            <div class="contact-grid fade-in-up">
+                <div class="contact-card">
+                    <h3>Sven Wittmaack</h3>
+                    <p class="contact-title">Geschäftsführer</p>
+                    <div class="contact-details">
+                        <p>📧 <a href="mailto:s.wittmaack@muenchner-lebensraum.de">s.wittmaack@muenchner-lebensraum.de</a></p>
+                        <p>📱 <a href="tel:+491234567890">+49 123 456 7890</a></p>
                     </div>
                 </div>
                 
-                <div class="contact-info-box fade-in-up delay-3">
-                    <h4>Bavarian Terra GmbH</h4>
-                    <p>
-                        [Straße und Hausnummer]<br>
-                        [PLZ] München<br>
-                        Deutschland
-                    </p>
-                    <p class="contact-info-general">
-                        <strong>E-Mail:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="97fef9f1f8d7f5f6e1f6e5fef6f9bae3f2e5e5f6b9f3f2">[email&#160;protected]</a><br>
-                        <strong>Telefon:</strong> [Telefonnummer]
-                    </p>
+                <div class="contact-card">
+                    <h3>Peer Weder</h3>
+                    <p class="contact-title">Geschäftsführer</p>
+                    <div class="contact-details">
+                        <p>📧 <a href="mailto:p.weder@muenchner-lebensraum.de">p.weder@muenchner-lebensraum.de</a></p>
+                        <p>📱 <a href="tel:+491234567891">+49 123 456 7891</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -347,43 +305,21 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <svg width="40" height="40" viewBox="0 0 60 60" class="logo-icon">
-                            <defs>
-                                <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
-                                    <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.7" />
-                                </linearGradient>
-                            </defs>
-                            <path d="M15 45 L15 20 L25 10 L35 20 L35 45 Z" fill="url(#logoGradientFooter)" opacity="0.9"/>
-                            <path d="M25 45 L25 15 L30 10 L45 20 L45 45 Z" fill="url(#logoGradientFooter)"/>
-                            <rect x="20" y="5" width="20" height="3" fill="url(#logoGradientFooter)" rx="1.5"/>
-                        </svg>
-                        <span>Bavarian Terra</span>
-                    </div>
-                    <p class="footer-tagline">Real Estate Partners</p>
+                <div class="footer-logo">
+                    <svg width="40" height="40" viewBox="0 0 50 50">
+                        <rect x="10" y="15" width="12" height="25" fill="currentColor" opacity="0.6"/>
+                        <rect x="28" y="15" width="12" height="25" fill="currentColor" opacity="0.6"/>
+                        <path d="M 5 15 L 25 5 L 45 15" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <rect x="20" y="28" width="10" height="12" fill="currentColor" opacity="0.8"/>
+                    </svg>
+                    <span>MÜNCHNER LEBENSRAUM</span>
                 </div>
-                
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Navigation</h4>
-                        <a href="#ueber-uns">Über Uns</a>
-                        <a href="#ankaufsprofil">Ankaufsprofil</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#kontakt">Kontakt</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <a href="#impressum" id="impressum-link">Impressum</a>
-                        <a href="#datenschutz">Datenschutz</a>
-                    </div>
+                    <a href="#" id="impressum-link">Impressum</a>
+                    <a href="#">Datenschutz</a>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Bavarian Terra GmbH. Alle Rechte vorbehalten.</p>
-            </div>
+            <p class="footer-copy">&copy; 2025 Münchner Lebensraum GmbH. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
@@ -392,10 +328,10 @@
         <div class="modal-content">
             <span class="modal-close">&times;</span>
             <h2>Impressum</h2>
-            <div class="impressum-text">
+            <div class="impressum-content">
                 <h3>Angaben gemäß § 5 TMG</h3>
                 <p>
-                    <strong>Bavarian Terra GmbH</strong><br>
+                    <strong>Münchner Lebensraum GmbH</strong><br>
                     [Straße und Hausnummer]<br>
                     [PLZ] München<br>
                     Deutschland
@@ -408,4 +344,22 @@
                 <p>
                     <strong>Kontakt:</strong><br>
                     Telefon: [Telefonnummer]<br>
-                    E-Mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="422b2c242d0220233423302b232c6f36273030236c2627">[email&#160;protected]</a>
+                    E-Mail: info@muenchner-lebensraum.de
+                </p>
+                <p>
+                    <strong>Registereintrag:</strong><br>
+                    Eintragung im Handelsregister<br>
+                    Registergericht: [Ort]<br>
+                    Registernummer: [Nummer]
+                </p>
+                <p>
+                    <strong>Umsatzsteuer-ID:</strong><br>
+                    Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [USt-IdNr.]
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
