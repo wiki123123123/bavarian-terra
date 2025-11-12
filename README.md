@@ -16,6 +16,9 @@ Residential real estate investments in Munich and Bavaria.
 - Base directory: /public
 - Test directory: /public/test (test before deploying to /public)
 
+## Auto-Deployment
+This repository uses GitHub Actions to automatically deploy to IONOS SFTP on every push to main branch.
+
 ## Files
 - index.html - Main website
 - styles.css - Styling
@@ -31,3 +34,6 @@ Residential real estate investments in Munich and Bavaria.
 - Smooth animations
 - Portfolio section
 - Contact information
+
+---
+*Last deployment: Automated via GitHub Actions*
