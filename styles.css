@@ -260,9 +260,8 @@ body {
 .highlight {
     color: #f4d03f;
     text-shadow: 
-        0 0 20px rgba(0, 0, 0, 0.8),
-        0 0 40px rgba(0, 0, 0, 0.6),
-        2px 2px 4px rgba(0, 0, 0, 0.9);
+        1px 1px 3px rgba(0, 0, 0, 0.7),
+        0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
