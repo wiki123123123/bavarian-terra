@@ -174,7 +174,7 @@ body {
     height: 100%;
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     background-image: 
-        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop&q=80'),
+        url('https://images.unsplash.com/photo-1595867818082-083862f3d630?w=1920&h=1080&fit=crop&q=80'),
         linear-gradient(135deg, rgba(26, 26, 46, 0.5) 0%, rgba(15, 52, 96, 0.45) 100%);
     background-size: cover;
     background-position: center;
