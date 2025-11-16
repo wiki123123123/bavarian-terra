@@ -175,11 +175,11 @@ body {
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     background-image: 
         url('hero.jpg'),
-        linear-gradient(135deg, rgba(26, 26, 46, 0.5) 0%, rgba(15, 52, 96, 0.45) 100%);
+        linear-gradient(135deg, rgba(26, 26, 46, 0.3) 0%, rgba(15, 52, 96, 0.25) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-    filter: brightness(1.4);
+    filter: brightness(1.6);
 }
 
 .hero-overlay {
