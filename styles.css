@@ -174,11 +174,11 @@ body {
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
     background-image: 
         url('https://images.unsplash.com/photo-1595867818082-083862f3d630?w=1920&h=1080&fit=crop&q=80'),
-        linear-gradient(135deg, rgba(26, 26, 46, 0.65) 0%, rgba(15, 52, 96, 0.6) 100%);
+        linear-gradient(135deg, rgba(26, 26, 46, 0.55) 0%, rgba(15, 52, 96, 0.5) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-    filter: brightness(1.1);
+    filter: brightness(1.2);
 }
 
 .hero-overlay {
@@ -259,11 +259,12 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(120deg, var(--accent-gold) 0%, #f4d03f 100%);
+    color: transparent;
+    background: linear-gradient(120deg, #d4af37 0%, #f4d03f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 2px 10px rgba(212, 175, 55, 0.4));
+    text-fill-color: transparent;
 }
 
 .hero-subtitle {
