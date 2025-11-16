@@ -20,11 +20,11 @@ jobs:
         port: 22
         user: su206119
         pass: ${{ secrets.FTP_PASSWORD }}
-        remoteDir: '/public/test'
+        remoteDir: '/public'
         localDir: '.'
         options: '--only-newer --parallel=10'
         
     - name: Deployment complete
       run: |
-        echo "✅ Deployed to IONOS /public/test"
-        echo "🌐 Test at: http://muenchner-lebensraum.de/test/"
+        echo "✅ Deployed to IONOS /public (PRODUCTION)"
+        echo "🌐 Live at: http://muenchner-lebensraum.de"
