@@ -259,6 +259,9 @@ body {
 
 .highlight {
     color: #d4af37;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+    text-stroke: 1px rgba(0, 0, 0, 0.3);
+    paint-order: stroke fill;
 }
 
 .hero-subtitle {
