@@ -259,12 +259,10 @@ body {
 }
 
 .highlight {
-    color: transparent;
     background: linear-gradient(120deg, #d4af37 0%, #f4d03f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .hero-subtitle {
